@@ -2,9 +2,23 @@ public abstract class Mobile {
     private String name;
     private String color;
     private String brand;
+    private int messageLimit;
 
     public void call(String message) {
         System.out.println("Message :" + message);
+    }
+
+    public void checkMessageLimit()
+    {
+        System.out.println("Message cannot be sent");
+    }
+
+    public int getMessageLimit() {
+        return messageLimit;
+    }
+
+    public void setMessageLimit(int messageLimit) {
+        this.messageLimit = messageLimit;
     }
 
     public String getName() {

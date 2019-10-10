@@ -6,7 +6,12 @@ public class Android extends Mobile {
         System.out.println("<Android>Message :" + message);
     }
 
-    //    @Override
+    @Override
+    public void checkMessageLimit() {
+        System.out.println("<Android> Message cannot be sent");
+    }
+
+//    @Override
 //    public void call(String message)
 //    {
 //        System.out.println("<Android>Message :" + message);
