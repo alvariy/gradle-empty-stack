@@ -7,6 +7,10 @@ public class Person{
         this.mobile = mobile;
     }
 
+    public void willCall(String message)
+    {
+        mobile.call(message);
+    }
 
     public String getName() {
         return name;
